@@ -8,7 +8,8 @@ contract SimpleStorge{
     uint256 favoriateNumber;
 
     //uses gas it is changing the state of the blockchain 
-    function store(uint256 _favNum) public {
+    //virtual for overiding in extraStorage
+    function store(uint256 _favNum) public virtual {
         favoriateNumber = _favNum;
     }
 
